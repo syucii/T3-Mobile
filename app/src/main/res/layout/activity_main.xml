@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root: LinearLayout (vertical) — memenuhi syarat layout ke-1 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <!-- Judul -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Identitas Mahasiswa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Label Nama -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:paddingBottom="4dp" />
+
+    <!-- EditText Nama -->
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nama lengkap..."
+        android:inputType="textPersonName"
+        android:background="@android:drawable/edit_text"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Label Jenis Kelamin -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:paddingBottom="4dp" />
+
+    <!-- RadioGroup dengan LinearLayout horizontal di dalam — memenuhi syarat layout ke-2 -->
+    <RadioGroup
+        android:id="@+id/rgKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <RadioButton
+            android:id="@+id/rbLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:textColor="#333333"
+            android:layout_marginEnd="16dp" />
+
+        <RadioButton
+            android:id="@+id/rbPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:textColor="#333333" />
+
+    </RadioGroup>
+
+    <!-- Label Hobi -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hobi"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:paddingBottom="4dp" />
+
+    <!-- CheckBox Hobi -->
+    <CheckBox
+        android:id="@+id/cbMembaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Membaca"
+        android:textColor="#333333" />
+
+    <CheckBox
+        android:id="@+id/cbCoding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coding"
+        android:textColor="#333333" />
+
+    <CheckBox
+        android:id="@+id/cbOlahraga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olahraga"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Tampilkan -->
+    <Button
+        android:id="@+id/btnTampilkan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tampilkan"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView Hasil -->
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil akan muncul di sini..."
+        android:textColor="#AAAAAA"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:background="#F5F5F5"
+        android:lineSpacingExtra="4dp" />
+
+</LinearLayout>
